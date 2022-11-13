@@ -1,0 +1,11 @@
+flamarkt-native-email-overrides:
+    email:
+        activateAccount:
+            body: => core.email.activate_account.body
+            action: Activate account
+        resetPassword:
+            body: => core.email.reset_password.body
+            action: Reset password
+        confirmEmail:
+            body: => core.email.confirm_email.body
+            action: Confirm email

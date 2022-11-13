@@ -1,0 +1,48 @@
+{
+    "name": "flamarkt/native-email-overrides",
+    "description": "Replaces Flarum core emails with the Flamarkt mail template.",
+    "keywords": [
+        "flarum",
+        "flamarkt",
+        "marketplace",
+        "ecommerce",
+        "email",
+        "template"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "require": {
+        "flarum/core": "^1.2",
+        "flamarkt/core": "^0.1.0"
+    },
+    "authors": [
+        {
+            "name": "Flamarkt",
+            "homepage": "https://flamarkt.org/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/flamarkt/native-email-overrides/issues",
+        "source": "https://github.com/flamarkt/native-email-overrides"
+    },
+    "autoload": {
+        "psr-4": {
+            "Flamarkt\\NativeEmailOverrides\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Native Email Overrides",
+            "category": "flamarkt",
+            "icon": {
+                "name": "fas fa-envelope-open-text",
+                "backgroundColor": "#266a13",
+                "color": "#fff"
+            }
+        },
+        "flamarkt-backoffice": {
+            "showInBackoffice": true,
+            "hideFromAdmin": true
+        }
+    }
+}
